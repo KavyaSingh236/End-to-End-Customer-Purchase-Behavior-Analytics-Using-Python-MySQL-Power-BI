@@ -57,6 +57,6 @@ This repository includes:
 
 ---
 
-## 👤 Author
+## ✍️ Attribution
 
-**Kavya Balaji Singh**
+Designed & Automated by **Kavya Balaji Singh**
