@@ -1,62 +1,137 @@
-# End-to-End Customer Purchase Behavior Analytics Using Python, MySQL & Power BI
-
-This project builds a complete analytics pipeline for exploring customer purchase behavior. The data was cleaned in Python, stored and queried in MySQL, and visualized through an interactive Power BI dashboard. The goal was to take the dataset from raw CSV to insight-ready visuals using multiple tools working together.
-
----
-
-## 🛠 Project Workflow
-
-### **1. Data Preparation (Python)**
-- Loaded the raw CSV dataset into JupyterLab
-- Examined the structure, column types, and missing values
-- Cleaned inconsistencies in dates, numerical fields, and categories
-- Created new calculated attributes such as `Total Sales`
-- Exported a cleaned dataset for database storage
-
-### **2. Database & Querying (MySQL Workbench)**
-- Imported the cleaned dataset into MySQL
-- Wrote analytical SQL queries to study:
-  - Purchase patterns over time
-  - Sales contributions by category
-  - Payment method usage
-  - Discount behavior
-- Used query outputs as the basis for dashboard visuals
-
-### **3. Dashboard & Visual Exploration (Power BI)**
-- Connected Power BI directly to MySQL tables
-- Designed visuals and KPIs for interactive exploration
-- Added filters for categories, payment types, and dates
-- Built a multi-visual dashboard for exploring the dataset
-
-### **4. Documentation & Presentation**
-- Compiled the workflow, visuals, and findings into a structured report
-- Created a slide deck explaining how the project was built end-to-end
+# End-to-End Customer Purchase Behavior Analytics  
+### Using Python, MySQL & Power BI
 
 ---
 
-## 🧱 Tooling Decisions
+## Overview
 
-- **Python** for cleaning because it made data formatting and transformation easier
-- **MySQL** for analytics because SQL was better suited for grouping and aggregations
-- **Power BI** for visualization because it supports direct connection to databases
+This project builds a complete analytics pipeline to explore customer purchasing behavior using transactional retail data.
 
-Together these tools replicated a realistic analytics setup rather than doing everything in a single tool.
+The dataset is processed and cleaned in Python, stored and analyzed using MySQL, and visualized through an interactive Power BI dashboard. The goal is to transform raw transactional data into meaningful insights that support business analysis and decision-making.
 
----
-
-## 📦 Project Deliverables
-
-This repository includes:
-
-- `.csv` dataset (raw)
-- `.ipynb` notebook (cleaning and preprocessing)
-- `.sql` file (analytical queries)
-- `.pbix` dashboard file
-- `.pdf` project report
-- `.pptx` presentation slides
+The project demonstrates how multiple data tools can work together in a realistic analytics workflow.
 
 ---
 
-## ✍️ Author
+## Business Problem
+
+Retail organizations collect large volumes of transactional data but often struggle to convert raw purchase records into actionable insights.
+
+Understanding customer purchasing patterns, product category performance, and payment behavior can help businesses make informed decisions about inventory, promotions, and pricing strategies.
+
+This project analyzes purchase behavior data to demonstrate how analytics pipelines can generate meaningful insights from raw transactional data.
+
+---
+
+## Dataset
+
+The dataset contains transactional purchase records including product details, pricing, payment methods, and order timestamps.
+
+Key attributes include:
+
+- Product category
+- Transaction date
+- Payment method
+- Discount usage
+- Purchase value
+
+These attributes allow analysis of sales trends, customer purchasing behavior, and revenue contributions.
+
+---
+
+## Project Workflow
+
+### 1. Data Preparation (Python)
+
+- Loaded the raw dataset into Jupyter Notebook
+- Inspected dataset structure and column types
+- Identified and handled missing values
+- Cleaned date formats and categorical fields
+- Created new calculated attributes such as **Total Sales**
+- Exported cleaned dataset for database storage
+
+---
+
+### 2. Database Analysis (MySQL)
+
+- Imported cleaned dataset into **MySQL**
+- Performed analytical SQL queries including:
+
+  - Sales trends over time
+  - Revenue contribution by product category
+  - Payment method distribution
+  - Discount usage patterns
+
+- Used SQL results to support dashboard analysis
+
+---
+
+### 3. Dashboard Visualization (Power BI)
+
+- Connected Power BI to MySQL database
+- Built interactive dashboard components including:
+
+  - Revenue KPIs
+  - Category-level sales comparisons
+  - Time-series purchase trends
+  - Payment method distribution charts
+
+- Added filters for category, payment type, and date ranges
+
+---
+
+## Dashboard Preview
+
+![Power BI Dashboard](./dashboard_preview.png)
+
+---
+
+## Key Insights
+
+Exploratory analysis of the dataset revealed several patterns in customer purchasing behavior:
+
+- Certain product categories contributed a large portion of total revenue.
+- Payment method preferences varied across transaction segments.
+- Discount usage influenced purchasing frequency and order size.
+
+These findings demonstrate how combining Python preprocessing, SQL analytics, and Power BI visualization can support data-driven retail insights.
+
+---
+
+## Technical Stack
+
+- Python
+- Pandas
+- MySQL
+- SQL
+- Power BI
+- Jupyter Notebook
+
+---
+
+## Skills Demonstrated
+
+- Data cleaning and preprocessing
+- SQL-based analytical querying
+- Dashboard design and visualization
+- Business data exploration
+- End-to-end analytics pipeline development
+
+---
+
+## Project Deliverables
+
+This repository contains:
+
+- Raw dataset (.csv)
+- Data cleaning notebook (.ipynb)
+- Analytical SQL queries (.sql)
+- Power BI dashboard (.pbix)
+- Project report (.pdf)
+- Presentation slides (.pptx)
+
+---
+
+## Author
 
 **Kavya Balaji Singh**
